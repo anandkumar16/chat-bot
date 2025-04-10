@@ -6,7 +6,7 @@ import { FiSend, FiUser, FiCopy, FiCheck } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
 const makeRequestAPI = async (prompt) => {
-  const res = await axios.post("http://localhost:5000/generate", { prompt });
+  const res = await axios.post("https://api-dostai-qocw.onrender.com/generate", { prompt });
   return res.data;
 };
 
